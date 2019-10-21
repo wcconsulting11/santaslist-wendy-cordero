@@ -18,6 +18,8 @@ class ListsController < ApplicationController
    @lists = List.find(:id)
   end
  
+  def show
+  end
   private
 
   def list_params

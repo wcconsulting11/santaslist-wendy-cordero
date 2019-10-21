@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_10_15_013949) do
   create_table "lists", force: :cascade do |t|
     t.string "name"
     t.integer "age"
-    t.text "request"
+    t.text "wish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

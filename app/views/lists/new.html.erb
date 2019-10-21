@@ -1,0 +1,10 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Christmas Wish</h1>
+  <%= simple_form_for @lists do |f| %>
+    <%= f.input :name %>
+    <%= f.input :age %>
+    <%= f.input :wish %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>

@@ -34,7 +34,15 @@
   }
 
 
-  body {
+  body{
     background-image: image_url('fresh_snow.png');
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   }
+
+  .fas{
+    height: 25px !important;
+    width: 20px !important;
+    color: red !important;
+  }
+
+ 

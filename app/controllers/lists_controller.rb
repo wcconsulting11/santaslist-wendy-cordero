@@ -1,16 +1,15 @@
 class ListsController < ApplicationController
  def index
-    @list = List.all
+    @lists = List.all
  end
 
  def new
-    @lists = List.new
- end
+   @lists = List.new
+end
 
  def create
-    @list = List.create(list_params)
-    if @list.save
-    end
+    @lists = List.create(lists_params)
+   
     redirect_to root_path
  end
 
@@ -22,8 +21,8 @@ class ListsController < ApplicationController
   end
   private
 
-  def list_params
-    params.require(:list).permit(:list_name, :list_age, :list_wish)
+  def lists_params
+    params.require(:list).permit(:name, :age, :wish)
   end 
  
 end
